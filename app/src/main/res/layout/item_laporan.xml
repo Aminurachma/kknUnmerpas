@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="itemMyLaporan"
+            type="com.example.kkn_unmer.module.laporan.model.GetMyLaporanModel" />
+
+   </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        app:cardBackgroundColor="@color/bluemuda"
+        app:cardCornerRadius="@dimen/_4sdp">
+
+        <RelativeLayout
+            android:id="@+id/item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp">
+
+                <LinearLayout
+                    android:id="@+id/linearMhs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mhs_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/orange2"
+                        android:textSize="@dimen/_14ssp"
+                        tools:text="Aminurachma Aisyah" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/npm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:textColor="@color/orange2"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="@{itemMyLaporan.NPMMhs}"
+                        tools:text="19292929.283.1"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="@{`Keterangan : `  + itemMyLaporan.ketLaporan}"
+                        tools:text="Keterangan : Foto apa iniiii"/>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/laporan_pict"
+                    android:layout_below="@id/linearMhs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/coba"
+                    android:src="@{itemMyLaporan.pictLaporan}"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/creation_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/orange1"
+                    android:textSize="@dimen/_9ssp"
+                    tools:text="4 Menit yang lalu" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

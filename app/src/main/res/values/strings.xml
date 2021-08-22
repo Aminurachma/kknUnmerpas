@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Sipekan</string>
+    <string name="kkn">Kuliah Kerja Nyata Universitas Merdeka Pasuruan</string>
+    <string name="login">LOGIN</string>
+    <string name="exit_dialogue">Apakah Anda ingin keluar dari aplikasi ini ?</string>
+    <string name="welcome">Welcome,</string>
+    <string name="universitas_merdeka_pasuruan">Universitas Merdeka Pasuruan</string>
+    <string name="kuliah_kerja_nyata">Kuliah Kerja Nyata</string>
+    <string name="ketsudahupload">Anda telah mengupload laporan hari ini !</string>
+    <string name="mahasiswa">Mahasiswa</string>
+    <string name="tambah_data_mahasiswa">Tambah Data Mahasiswa</string>
+    <string name="npm_mahasiswa">NPM Mahasiswa</string>
+    <string name="nama_mahasiswa">Nama Mahasiswa</string>
+    <string name="fakultas">Fakultas</string>
+    <string name="login_failed">Username atau password salah!</string>
+    <string name="npm_failed">NPM Anda salah!</string>
+    <string name="empty_username">NPM Mahasiswa tidak boleh kosong!</string>
+    <string name="empty_password">Password tidak boleh kosong!</string>
+    <string name="alamat_mahasiswa">Alamat Mahasiswa</string>
+    <string name="empty_field">Kolom ini tidak boleh kosong !</string>
+    <string name="upload_laporan">Upload Laporan</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="berhasilupload">Berhasil Upload Laporan!</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="profile">Profile</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="logout">Logout</string>
+    <string name="upload_foto_laporan">Upload Foto Laporan</string>
+    <string name="riwayat_laporan">Riwayat Laporan</string>
+    <string name="sistem_pelaporan_kuliah_kerja_nyata">Sistem Pelaporan Kuliah Kerja Nyata</string>
+    <string name="sipekan">Sipekan</string>
+</resources>
